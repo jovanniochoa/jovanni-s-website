@@ -9,7 +9,7 @@ if(isset($_GET['logout'])){
     file_put_contents("log.html", $logout_message, FILE_APPEND | LOCK_EX);
      
     session_destroy();
-    header("Location: chat
+    header("Location: chat.php
     "); //Redirect the user
 }
  
